@@ -9,3 +9,170 @@
 		color: red;
 	}
 }
+body {
+    font-family: 'Arima', cursive;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Header styling */
+.header {
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.header span {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+/* Main Title */
+header h1 {
+    font-family: 'Arima', cursive;
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+/* Introduction Section with centered image1 */
+.introduction img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+}
+
+/* Details Section */
+.details .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin: 20px 0;
+}
+.details .image-grid img {
+    border-radius: 5px;
+}
+.details .img-row-1 {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.details .img-row-1 img {
+    width: calc(50% - 5px); 
+}
+.details .img-row-2 img {
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+/* Sponge Dough and Filling Sections */
+.sponge-dough-section, .filling-section {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.sponge-dough-section {
+    background-color: #eef1f8;
+}
+.filling-section {
+    background-color: #f9f1e7;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-header h2 {
+    font-size: 1.6em;
+    display: inline-block;
+}
+.section-header hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+}
+.ingredients {
+    list-style: none;
+    padding: 0;
+}
+.ingredients li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.instructions {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.instructions li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+.footer p {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Media Queries */
+
+/* 手机设备，宽度小于 768px */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .details .image-grid {
+        display: block;
+    }
+    .details .image-grid .img-row-1 img, .details .image-grid .img-row-2 img {
+        width: 100%; 
+    }
+    .section-header h2 {
+        font-size: 1.4em;
+    }
+}
+
+
+/* 桌面设备，宽度大于 1024px */
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    .details .image-grid .img-row-1 img {
+        width: calc(50% - 5px);
+    }
+    .details .image-grid .img-row-2 img {
+        width: 100%;
+    }
+    .section-header h2 {
+        font-size: 1.6em;
+    }
+}
